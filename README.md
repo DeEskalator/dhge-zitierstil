@@ -12,13 +12,13 @@ Das Erstellen eines Zitierstils ist ein relativ kompexer Prozess bei dem viel be
 2. **Hinzufügen des Zitierstils**
    1. Aufrufen von Zotero → Settings → Cite → +
    2. Hinzufügen von `duale-hochschule-gera-eisenach.csl`
-
+   ![Bild 1](https://github.com/DeEskalator/dhge-zitierstil/blob/main/Bilder/Bild%201.png)
 
 3. **Einrichtung der Citekeys**
    1. Download und Installation des Better BibTeX-Plugins ([Installationsanweisung](https://retorque.re/zotero-better-bibtex/installation/index.html))
    2. Aufgrufen von Zotero → Settings →  Better BibTeX  → Import → Import BetterBibTeX preferences/citation keys...
    3. Import der Citekey-Einstellungen aus `BibTeX.json`
-
+   ![Bild 2](https://github.com/DeEskalator/dhge-zitierstil/blob/main/Bilder/Bild%202.png)
 
 1. **Aktualisieren der bestehenden Citekeys auf das neue Format:**
    1. Markieren aller betreffenenden Einträge in Zotero
