@@ -15,7 +15,7 @@
     <category citation-format="citekey-date"/>
     <category field="psychology"/>
     <category field="generic-base"/>
-    <updated>2024-03-10T14:23:04+00:00</updated>
+    <updated>2024-03-10T15:24:37+00:00</updated>
     <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
   </info>
   <locale xml:lang="en">
@@ -1271,7 +1271,7 @@
         <choose>
           <if variable="volume">
             <group>
-              <text variable="volume" font-style="italic"/>
+              <text variable="volume" font-style="normal"/>
               <text variable="issue" prefix="(" suffix=")"/>
             </group>
           </if>
