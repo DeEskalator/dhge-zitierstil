@@ -15,7 +15,7 @@
     <category citation-format="citekey-date"/>
     <category field="psychology"/>
     <category field="generic-base"/>
-    <updated>2024-03-11T12:37:48+00:00</updated>
+    <updated>2024-03-11T15:03:16+00:00</updated>
     <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
   </info>
   <locale xml:lang="en">
@@ -574,7 +574,7 @@
       <else>
         <choose>
           <if type="article-journal article-magazine article-newspaper post-weblog review review-book" match="any">
-            <text variable="title" font-style="italic"/>
+            <text variable="title" font-style="normal"/>
           </if>
           <else-if type="paper-conference">
             <choose>
@@ -1373,7 +1373,9 @@
   </macro>
   <macro name="access">
     <choose>
-      <if variable="DOI" match="any"/>
+      <if variable="DOI" match="any">
+        <text variable="DOI" prefix="https://doi.org/"/>
+      </if>
       <else-if variable="URL">
         <group delimiter=" " suffix=",">
           <choose>
