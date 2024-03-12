@@ -12,7 +12,7 @@
       <name>Brenton M. Wiernik</name>
       <email>zotero@wiernik.org</email>
     </author>
-    <category citation-format="citekey-date"/>
+    <category citation-format="label"/>
     <category field="psychology"/>
     <category field="generic-base"/>
     <updated>2024-03-11T15:03:16+00:00</updated>
@@ -1286,7 +1286,6 @@
               <text variable="number"/>
             </group>
           </if>
-          <else/>
         </choose>
       </group>
       <choose>
