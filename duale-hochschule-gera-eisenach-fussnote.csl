@@ -1721,20 +1721,20 @@
       <key macro="date-sort-date" sort="ascending"/>
       <key variable="status"/>
     </sort>
-    <layout delimiter="; ">
+    <layout delimiter="; " prefix="[">
       <choose>
         <if match="all" position="ibid-with-locator">
-          <group delimiter=", " prefix="[" suffix="]">
-            <text term="ibid" text-case="capitalize-first"/>
+          <group delimiter=", ">
+            <text term="ibid" text-case="capitalize-first" suffix="]"/>
             <text variable="locator" prefix="S. "/>
           </group>
         </if>
         <else-if match="all" position="ibid">
-          <text term="ibid" text-case="capitalize-first" prefix="[" suffix="]"/>
+          <text term="ibid" text-case="capitalize-first" suffix="]"/>
         </else-if>
         <else>
           <group delimiter=", ">
-            <text variable="citation-key" prefix="[" suffix="]"/>
+            <text variable="citation-key" suffix="]"/>
             <text macro="citation-locator"/>
           </group>
         </else>
