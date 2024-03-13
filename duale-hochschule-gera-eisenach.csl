@@ -336,7 +336,6 @@
                   <if variable="title">
                     <group delimiter=" ">
                       <text macro="title"/>
-                      <text macro="parenthetical"/>
                     </group>
                   </if>
                   <else>
@@ -363,7 +362,6 @@
           <if variable="title">
             <group delimiter=" ">
               <text macro="title"/>
-              <text macro="parenthetical"/>
             </group>
           </if>
           <else>
@@ -551,14 +549,12 @@
       <if variable="title">
         <group delimiter=" ">
           <text macro="title"/>
-          <text macro="parenthetical"/>
           <text macro="bracketed"/>
         </group>
       </if>
       <else>
         <group delimiter=" ">
           <text macro="bracketed"/>
-          <text macro="parenthetical"/>
         </group>
       </else>
     </choose>
@@ -658,7 +654,55 @@
       </else>
     </choose>
   </macro>
-  <macro name="parenthetical"/>
+  <macro name="parenthetical">
+    <group prefix="(" suffix=")">
+      <choose>
+        <if type="patent">
+          <group delimiter=" ">
+            <text variable="authority" form="short"/>
+            <choose>
+              <if variable="genre">
+                <text variable="genre" text-case="capitalize-first"/>
+              </if>
+              <else>
+                <text value="patent" text-case="capitalize-first"/>
+              </else>
+            </choose>
+            <group delimiter=" ">
+              <text term="issue" form="short" text-case="capitalize-first"/>
+              <text variable="number"/>
+            </group>
+          </group>
+        </if>
+        <else-if type="post webpage" match="any">
+          <group delimiter="; ">
+            <text macro="secondary-contributors"/>
+            <text macro="database-location"/>
+            <text macro="number"/>
+            <text macro="locators-booklike"/>
+          </group>
+        </else-if>
+        <else-if variable="container-title">
+          <group delimiter="; ">
+            <text macro="secondary-contributors"/>
+            <choose>
+              <if type="broadcast graphic map motion_picture song" match="any">
+                <text macro="number"/>
+              </if>
+            </choose>
+          </group>
+        </else-if>
+        <else>
+          <group delimiter="; ">
+            <text macro="secondary-contributors"/>
+            <text macro="database-location"/>
+            <text macro="number"/>
+            <text macro="locators-booklike"/>
+          </group>
+        </else>
+      </choose>
+    </group>
+  </macro>
   <macro name="parenthetical-container">
     <choose>
       <if variable="container-title" match="any"/>
