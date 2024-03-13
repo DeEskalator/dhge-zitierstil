@@ -12,6 +12,7 @@ Das Erstellen eines Zitierstils ist ein relativ kompexer Prozess bei dem viel be
 2. **Hinzufügen des Zitierstils**
    1. Aufrufen von Zotero → Settings → Cite → +
    2. Hinzufügen von `duale-hochschule-gera-eisenach.csl` [Screenshot](https://github.com/DeEskalator/dhge-zitierstil/blob/main/Bilder/Bild%201.png)
+   *Hinweis*: `duale-hochschule-gera-eisenach-fussnote.csl` ist der identische Zitierstil als Fußnote
 
 3. **Einrichtung der Citekeys**
    1. Download und Installation des Better BibTeX-Plugins ([Installationsanweisung](https://retorque.re/zotero-better-bibtex/installation/index.html))
