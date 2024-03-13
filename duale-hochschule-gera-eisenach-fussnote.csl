@@ -15,7 +15,7 @@
     <category citation-format="label"/>
     <category field="psychology"/>
     <category field="generic-base"/>
-    <updated>2024-03-13T10:02:46+00:00</updated>
+    <updated>2024-03-13T10:23:02+00:00</updated>
     <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
   </info>
   <locale xml:lang="en">
@@ -1722,7 +1722,7 @@
       <key variable="status"/>
     </sort>
     <layout delimiter="; ">
-      <group delimiter="; ">
+      <group delimiter=", ">
         <text variable="citation-key" prefix="[" suffix="]"/>
         <text macro="citation-locator"/>
       </group>
