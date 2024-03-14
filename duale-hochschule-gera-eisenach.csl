@@ -15,7 +15,7 @@
     <category citation-format="label"/>
     <category field="psychology"/>
     <category field="generic-base"/>
-    <updated>2024-03-13T14:19:29+00:00</updated>
+    <updated>2024-03-14T15:45:49+00:00</updated>
     <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
   </info>
   <locale xml:lang="en">
@@ -1721,20 +1721,20 @@
       <key macro="date-sort-date" sort="ascending"/>
       <key variable="status"/>
     </sort>
-    <layout delimiter="; " prefix="[">
+    <layout delimiter="; ">
       <choose>
         <if match="all" position="ibid-with-locator">
           <group delimiter=", ">
-            <text term="ibid" text-case="capitalize-first" suffix="]"/>
+            <text term="ibid" text-case="capitalize-first" prefix="[" suffix="]"/>
             <text variable="locator" prefix="S. "/>
           </group>
         </if>
         <else-if match="all" position="ibid">
-          <text term="ibid" text-case="capitalize-first" suffix="]"/>
+          <text term="ibid" text-case="capitalize-first" prefix="[" suffix="]"/>
         </else-if>
         <else>
           <group delimiter=", ">
-            <text variable="citation-key" suffix="]"/>
+            <text variable="citation-key" prefix="[" suffix="]"/>
             <text macro="citation-locator"/>
           </group>
         </else>
