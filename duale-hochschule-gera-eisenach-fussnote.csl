@@ -15,7 +15,7 @@
     <category citation-format="label"/>
     <category field="psychology"/>
     <category field="generic-base"/>
-    <updated>2024-03-13T13:21:38+00:00</updated>
+    <updated>2024-04-13T23:18:10+00:00</updated>
     <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
   </info>
   <locale xml:lang="en">
@@ -1416,10 +1416,8 @@
   </macro>
   <macro name="access">
     <choose>
-      <if variable="DOI" match="any">
-        <text variable="DOI" prefix="https://doi.org/"/>
-      </if>
-      <else-if variable="URL">
+      <if variable="DOI" match="any"/>
+      <else-if variable="URL" type="webpage">
         <group delimiter=" " suffix=",">
           <choose>
             <if variable="issued status" match="none">

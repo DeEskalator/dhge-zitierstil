@@ -26,6 +26,7 @@ Das Erstellen eines Zitierstils ist ein relativ kompexer Prozess bei dem viel be
 
 ## Hinweise/Bekannte Probleme
 
+- Die "Hinweise und Empfehlungen zur Anfertigung schriftlicher Arbeiten" geben lediglich an, wie Quellenangaben für Bücher, Dissertation/Diplomarbeit, Beiträge in Sammelwerken/Tagungsbänden, Aufsätze in Zeitschriften und Webseiten zu erstellen sind. Aus diesem Grund ist dieses Format auf die CSL Typen book, thesis, book section, journal article und web page angepasst. Es wird nicht empfohlen, andere Typen mit diesem Format zu verwenden, da so ein Fallback auf das APA Format stattfindet. Wilde Dinge können passieren ... pigs might fly
 - [SSPK00] sollte laut "Hinweise und Empfehlungen zur Anfertigung schriftlicher Arbeiten" [SSP+00] sein. Ab 4. Autoren wird aber das korrekt das "+" angezeigt. Dies ist eine Limitierung von Better BibTeX
 - Quellen aus Sammelwerken/Zeitschriften sollte man immer als Dokumenttyp "Book Section" und nicht als "Journal Article" hinzufügen da nur "Book Section" das CSL-Feld Verlag hat wie es unter Hinweise und Empfehlungen zur Anfertigung schriftlicher Arbeiten
 - Erstelldatum von Onlinequellen wird in meiner Erfahrung von Zotero nur unzuverlässig erkannt und sollte hinzugefügt werden. Das Abrufdatum wird aber automatisch hinzugefügt
