@@ -15,7 +15,7 @@
     <category citation-format="label"/>
     <category field="psychology"/>
     <category field="generic-base"/>
-    <updated>2024-04-13T23:18:10+00:00</updated>
+    <updated>2024-04-14T09:45:17+00:00</updated>
     <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
   </info>
   <locale xml:lang="en">
@@ -1741,6 +1741,7 @@
   </citation>
   <bibliography et-al-use-first="19" et-al-use-last="true" entry-spacing="0" line-spacing="2" hanging-indent="true">
     <sort>
+      <key variable="citation-key"/>
       <key macro="author-bib"/>
       <key macro="date-sort-group"/>
       <key macro="date-sort-date" sort="ascending"/>
